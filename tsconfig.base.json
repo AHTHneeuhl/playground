@@ -4,10 +4,11 @@
     "module": "CommonJS",
     "strict": true,
     "moduleResolution": "node",
-    "baseUrl": ".",
-    "paths": {
-      "@repo/types": ["packages/types"],
-      "@repo/config": ["packages/config"]
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "@repo/types": ["packages/types/src"]
+      }
     }
   }
 }

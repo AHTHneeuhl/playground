@@ -1,4 +1,4 @@
-import { JwtPayload } from "@packages/types';
+import { JwtPayload } from '@repo/types';
 
 export function getTenantId(user: JwtPayload): string {
   if (!user?.tenantId) {
