@@ -1,4 +1,7 @@
 import { Module } from '@nestjs/common';
+import { PlaygroundController } from './playground.controller';
 
-@Module({})
+@Module({
+  controllers: [PlaygroundController]
+})
 export class PlaygroundModule {}
