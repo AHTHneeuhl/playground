@@ -13,3 +13,24 @@ model User {
   name  String?
   password String
 }
+
+model Project {
+  id        String   @id @default(uuid())
+  name      String
+  createdAt DateTime @default(now())
+}
+
+model Diagram {
+  id        String   @id @default(uuid())
+  name      String
+  projectId String
+  createdAt DateTime @default(now())
+}
+
+model Node {
+  id        String @id @default(uuid())
+}
+
+model Edge {
+  id        String @id @default(uuid())
+}
