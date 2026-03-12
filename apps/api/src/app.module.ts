@@ -6,6 +6,7 @@ import { join } from "path";
 import { UserModule } from "./modules/user/user.module";
 import { PlaygroundModule } from "./modules/playground/playground.module";
 import { DiagramModule } from "./modules/diagram/diagram.module";
+import { PrismaModule } from "./prisma/prisma.module";
 
 @Module({
   imports: [
@@ -16,6 +17,7 @@ import { DiagramModule } from "./modules/diagram/diagram.module";
     UserModule,
     PlaygroundModule,
     DiagramModule,
+    PrismaModule,
   ],
 })
 export class AppModule {}
