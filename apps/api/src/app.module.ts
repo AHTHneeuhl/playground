@@ -8,6 +8,7 @@ import { PlaygroundModule } from "./modules/playground/playground.module";
 import { DiagramModule } from "./modules/diagram/diagram.module";
 import { PrismaModule } from "./prisma/prisma.module";
 import { HealthController } from './health/health.controller';
+import { AuthModule } from './modules/auth/auth.module';
 
 @Module({
   imports: [
@@ -19,6 +20,7 @@ import { HealthController } from './health/health.controller';
     PlaygroundModule,
     DiagramModule,
     PrismaModule,
+    AuthModule,
   ],
   controllers: [HealthController],
 })
