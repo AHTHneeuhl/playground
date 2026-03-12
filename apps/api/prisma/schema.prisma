@@ -34,11 +34,20 @@ model Diagram {
 model Node {
   id        String  @id @default(uuid())
   diagramId String
+  type      String
+  x         Float
+  y         Float
+  data      Json?
+
   diagram   Diagram @relation(fields: [diagramId], references: [id])
 }
 
 model Edge {
   id        String  @id @default(uuid())
   diagramId String
+  source    String
+  target    String
+  label     String?
+
   diagram   Diagram @relation(fields: [diagramId], references: [id])
 }
